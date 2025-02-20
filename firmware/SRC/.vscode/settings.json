@@ -1,0 +1,49 @@
+{
+  // These settings tweaks to the cmake plugin will ensure
+  // that you debug using cortex-debug instead of trying to launch
+  // a Pico binary on the host
+  "cmake.statusbar.advanced": {
+      "debug": {
+          "visibility": "hidden"
+      },
+      "launch": {
+          "visibility": "hidden"
+      },
+      "build": {
+          "visibility": "default"
+      },
+      "buildTarget": {
+          "visibility": "hidden"
+      }
+  },
+  "cmake.buildBeforeRun": true,
+  "cortex-debug.gdbPath": "gdb-multiarch",
+  "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+  "cortex-debug.openocdPath": "/home/pico/pico/openocd/src/openocd",
+  "files.associations": {
+    "miniz.h": "c",
+    "myenc28j60.h": "c",
+    "cmath": "cpp",
+    "tusb.h": "c",
+    "hid.h": "c",
+    "tusb_fifo.h": "c",
+    "osal.h": "c",
+    "tusb_common.h": "c",
+    "tusb_compiler.h": "c",
+    "tusb_option.h": "c",
+    "tusb_debug.h": "c",
+    "tusb_verify.h": "c",
+    "tusb_timeout.h": "c",
+    "tusb_types.h": "c",
+    "usb_descriptors.h": "c",
+    "array": "cpp",
+    "deque": "cpp",
+    "string": "cpp",
+    "unordered_map": "cpp",
+    "vector": "cpp",
+    "string_view": "cpp",
+    "initializer_list": "cpp",
+    "ranges": "cpp"
+},
+"C_Cpp.errorSquiggles": "Disabled"
+}
